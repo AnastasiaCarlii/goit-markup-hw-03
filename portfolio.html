@@ -22,43 +22,46 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
-    <header class="page-header">
-      <nav class="site-nav">
-        <a class="logo" href="./index.html"
-          >WEb<span class="second-logo">STUDIO</span></a
-        >
-
-        <ul class="site-nav list">
-          <li class="header-item">
-            <a href="./index.html" class="link">Studio</a>
-          </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="link">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <address>
-        <ul class="site-contacts list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="header-mail link"
-              >info@devstudio.com</a
+    <div class="container">
+      <header class="page-header">
+        <nav class="container main-nav">
+          <nav class="site-nav">
+            <a class="logo" href="./index.html"
+              >WEb<span class="second-logo">STUDIO</span></a
             >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="header-tel link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </header>
+            <ul class="site-nav list">
+              <li class="header-item">
+                <a href="./index.html" class="link">Studio</a>
+              </li>
+              <li class="header-item">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="header-item">
+                <a href="./index.html" class="link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address>
+            <ul class="site-contacts list">
+              <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="header-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <a href="tel:+110001111111" class="header-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </nav>
+      </header>
+    </div>
 
     <main>
-      <section>
+      <section class="hero-btn">
         <button class="hero-site-buttons" type="button">All</button>
         <button class="hero-site-buttons" type="button">Web Site</button>
         <button class="hero-site-buttons" type="button">App</button>
@@ -67,109 +70,167 @@
       </section>
 
       <section class="portfolio-section">
-        <h1 class="visually-hidden">Portfolio</h1>
-        <ul class="portfolio list">
-          <li class="team-section-portfolio">
-            <img
-              src="./images/first.jpg"
-              alt="banking app interface"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Banking App Interface Concept</h2>
-            <p class="person-position">App</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/second.jpg"
-              alt="cashless payment"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Cashless Payment</h2>
-            <p class="person-position">Marketing</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/third.jpg"
-              alt="working leptop"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Meditaion App</h2>
-            <p class="person-position">App</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/fourth.jpg"
-              alt="steering wheel"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Taxi Service</h2>
-            <p class="person-position">Taxi Service</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/fifth.jpg"
-              alt="screen illustrations"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Screen Illustrations</h2>
-            <p class="person-position">Design</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/sixth.jpg"
-              alt="smiling lady"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Online Courses</h2>
-            <p class="person-position">Marketing</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/seventh.jpg"
-              alt="slides with instagram pages"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Instagram Stories Concept</h2>
-            <p class="person-position">Design</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/eighth.jpg"
-              alt="lady is carrying bag with organic fruits"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Organic Food</h2>
-            <p class="person-position">Web Site</p>
-          </li>
-          <li class="team-section-portfolio">
-            <img
-              src="./images/ninth.jpg"
-              alt="cup of cupuccino"
-              width="360"
-              height="300"
-            />
-            <h2 class="person-name">Fresh Coffee</h2>
-            <p class="person-position">Web Site</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+          <ul class="portfolio list">
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/first.jpg"
+                    alt="banking app interface"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Banking App Interface Concept</h2>
+                  <p class="person-position">App</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/second.jpg"
+                    alt="cashless payment"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Cashless Payment</h2>
+                  <p class="person-position">Marketing</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/third.jpg"
+                    alt="working leptop"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Meditaion App</h2>
+                  <p class="person-position">App</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/fourth.jpg"
+                    alt="steering wheel"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Taxi Service</h2>
+                  <p class="person-position">Taxi Service</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/fifth.jpg"
+                    alt="screen illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Screen Illustrations</h2>
+                  <p class="person-position">Design</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/sixth.jpg"
+                    alt="smiling lady"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Online Courses</h2>
+                  <p class="person-position">Marketing</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/seventh.jpg"
+                    alt="slides with instagram pages"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Instagram Stories Concept</h2>
+                  <p class="person-position">Design</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/eighth.jpg"
+                    alt="lady is carrying bag with organic fruits"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Organic Food</h2>
+                  <p class="person-position">Web Site</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-section-portfolio">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/ninth.jpg"
+                    alt="cup of cupuccino"
+                    width="360"
+                    height="300"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="person-name">Fresh Coffee</h2>
+                  <p class="person-position">Web Site</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        >WEb<span class="second-logo-footer">STUDIO</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="logo" href="./index.html"
+          >WEb<span class="second-logo-footer">STUDIO</span></a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
