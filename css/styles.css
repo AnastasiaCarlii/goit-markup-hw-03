@@ -106,8 +106,6 @@ body {
 
 .site-nav {
   display: flex;
-  font-weight: 500;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -118,8 +116,6 @@ body {
 .site-contacts {
   display: flex;
   margin-left: auto;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -146,7 +142,7 @@ body {
   line-height: 60px;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
 }
 
@@ -154,19 +150,15 @@ body {
   display: block;
   cursor: pointer;
   font-family: inherit;
-  border: none;
-
-  width: 169px;
-  height: 56px;
   left: 636px;
   top: 428px;
+  border: none;
+  border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 48px;
   min-width: 169px;
-  height: 56px;
   padding: 16px 32px;
-
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -192,13 +184,15 @@ body {
 }
 .description {
   display: flex;
-  flex-basis: calc((100% - 72px) / 4);
   gap: 24px;
+}
+.benefits {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .feature-title {
   margin-top: 0;
   margin-bottom: 8px;
-  font-weight: 500;
+
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -206,8 +200,6 @@ body {
 }
 
 .feature-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -257,16 +249,12 @@ body {
 .person-position {
   padding-top: 8px;
   padding-bottom: 32px;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .person-name {
   padding-top: 32px;
-  font-weight: 500;
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -282,16 +270,14 @@ body {
 
 .footer {
   background: var(--title-text-color);
-
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 .second-logo-footer {
   color: var(--buttons-background-color);
 }
 .footer-text {
   margin-top: 16px;
-  font-size: 16px;
+  max-width: 264px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
@@ -309,10 +295,12 @@ body {
   color: var(--accent-color);
   background-color: var(--buttons-background-color);
   cursor: pointer;
-  border: none;
+
   padding: 12px 24px;
   width: 116px;
   height: 48px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .hero-site-buttons:hover,
 .hero-site-buttons:focus {
@@ -335,7 +323,6 @@ body {
 
 .team-section-portfolio {
   flex-basis: calc((100% - 48px) / 3);
-  justify-content: center;
 }
 
 .person-name {
